@@ -1,0 +1,73 @@
+<html lang="en-US">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <title>Hampers</title>
+<div hamper-html="HamperRun.html"></div>
+  <link rel="icon" 
+        type="image/png" 
+        href="https://repl.it/public/images/icon-square.png">
+<style>
+body {background: linear-gradient(to top, navy, blue);}
+h1   {color: white;}
+</style>
+</head>
+
+
+<body>
+<center><h1>Wow Luk at those Hampers<h1></center>
+</body>
+
+<style>
+.mySlides {display:none;}
+</style>
+
+<style>
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;}
+</style>
+
+<h1>
+<center>
+<a href="https://www.wikihow.com/Breed-Syrian-Hamsters" class="button"target="_blank">How make Syrian Hampers?</a>
+<h1>
+
+<body>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://www.wikihow.com/images/thumb/5/59/Breed-Syrian-Hamsters-Step-2-Version-2.jpg/aid2285054-v4-728px-Breed-Syrian-Hamsters-Step-2-Version-2.jpg.webp" style="width:100%">
+  <img class="mySlides" src="https://www.wikihow.com/images/thumb/a/a5/Breed-Syrian-Hamsters-Step-20.jpg/aid2285054-v4-728px-Breed-Syrian-Hamsters-Step-20.jpg.webp" style="width:100%">
+  <img class="mySlides" src="https://www.wikihow.com/images/thumb/7/74/Breed-Syrian-Hamsters-Step-10-Version-2.jpg/aid2285054-v4-728px-Breed-Syrian-Hamsters-Step-10-Version-2.jpg.webp" style="width:100%">
+  <img class="mySlides" src="https://www.wikihow.com/images/thumb/3/3d/Breed-Syrian-Hamsters-Step-3-Version-2.jpg/aid2285054-v4-900px-Breed-Syrian-Hamsters-Step-3-Version-2.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+
+</html>
