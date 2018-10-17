@@ -7,5 +7,3 @@ app = Flask('app')
 
 def index():
     return render_template('index.php')
-    
-app.run(host='0.0.0.0', port=8080)
