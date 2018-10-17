@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Hamper Run</title>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<br>
+<center>
+  <div style="position: relative; width: 200px">
+    <img src="https://media.tenor.com/images/a4ace8088e197c934c8506244a2106cb/tenor.gif">
+    </div>
+  </div>
+</center>
+<br>
+<center>
+  <big>You have enjoyed <span id="spin">0 runs</span>!</big>
+</center>
+</body>
+</html>
+
+<script>
+$(window).load(function (){
+  var spins = 0;
+  setInterval(function () {
+    spins = spins + 1;
+    $("#spin").text(spins + " spin" + (spins != 1 ? "s" : ""));
+  }, 4210);
+});
+</script>
